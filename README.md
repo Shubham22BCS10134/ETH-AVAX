@@ -1,24 +1,24 @@
 # ETH-AVAX
 
-LicenseManager Smart Contract
+# LicenseManager Smart Contract
 The LicenseManager smart contract is designed to manage the eligibility for a driving license based on users' ages and vehicle ownership statuses.
 
-Prerequisites
+## Prerequisites
 Solidity version ^0.8.0
 Ethereum development environment (Remix IDE, Truffle, Ganache, etc.)
-Overview
+## Overview
 The LicenseManager contract has the following features:
 
 Store and update user ages.
 Store and update vehicle ownership statuses.
 Verify driving license eligibility based on age and vehicle ownership status.
-Contract Details
-Mappings
+## Contract Details
+### Mappings
 mapping(address => uint) private userAge;
 Stores the age of each user. The key is the user's address, and the value is an unsigned integer representing their age.
 mapping(address => bool) private hasVehicle;
 Stores the vehicle ownership status of each user. The key is the user's address, and the value is a boolean indicating whether the user owns a vehicle.
-Functions
+### Functions
 function updateAge(uint _age) public
 
 Updates the age of the sender.
